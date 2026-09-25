@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Happy Birthday, Daddy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div id="visual"></div>
+      <h1 id="title"></h1>
+      <p class="msg" id="msg"></p>
+      <div class="controls">
+        <button class="nav" id="prev" aria-label="Previous">&#8592;</button>
+        <div class="dots" id="dots"></div>
+        <button class="nav" id="next" aria-label="Next">&#8594;</button>
+      </div>
+    </div>
+
+    <audio
+      id="bgMusic"
+      src="./Assets/Happiest year web.mp3"
+      loop
+      preload="auto"
+    ></audio>
+    <button id="soundToggle" aria-label="Toggle music">🔇</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
