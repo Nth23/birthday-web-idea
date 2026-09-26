@@ -1,11 +1,11 @@
 const heartIcon = `<svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9.5-9C.7 7.6 2.6 4 6 4c2 0 3.4 1.1 4 2.1C10.6 5.1 12 4 14 4c3.4 0 5.3 3.6 3.5 7-2.5 4.6-9.5 9-9.5 9z"/></svg>`;
 
-const uniPhoto = "./images/university.jpg"; // TODO: add your photo (data URI or file path)
-const gradPhoto = "./images/grad.png"; // TODO: add your photo (data URI or file path)
-const nyscPhoto = "./images/nysc.jpg"; // TODO: add your photo (data URI or file path)
-const brandPhoto = "./images/brand.png"; // TODO: add your photo (data URI or file path)
-const birthdayPhoto = "./images/Mr Remi.jpeg"; // TODO: add your photo (data URI or file path)
-const cakePhoto = "./images/cake.png"; // path to your cake image
+const uniPhoto = "./images/university.jpg";
+const gradPhoto = "./images/grad.png";
+const nyscPhoto = "./images/nysc.jpg";
+const brandPhoto = "./images/brand.png";
+const birthdayPhoto = "./images/mr-remi.jpeg";
+const cakePhoto = "./images/cake.png";
 
 const slides = [
   {
