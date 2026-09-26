@@ -65,9 +65,7 @@ slides.forEach((_, idx) => {
 function render() {
   const s = slides[i];
   if (s.type === "intro") {
-    visual.innerHTML = `<div class="photo-frame" style="aspect-ratio:1/1;max-width:180px;margin:0 auto 20px;">
-    <img src="${cakePhoto}" alt="Birthday cake">
-  </div>`;
+    visual.innerHTML = `<div class="icon-wrap"><img src="${cakePhoto}" alt="Birthday cake"></div>`;
   } else {
     visual.innerHTML = `<div class="photo-frame">${
       s.src
