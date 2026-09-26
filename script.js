@@ -4,6 +4,8 @@ const uniPhoto = "./images/university.jpg"; // TODO: add your photo (data URI or
 const gradPhoto = "./images/grad.png"; // TODO: add your photo (data URI or file path)
 const nyscPhoto = "./images/nysc.jpg"; // TODO: add your photo (data URI or file path)
 const brandPhoto = "./images/brand.png"; // TODO: add your photo (data URI or file path)
+const birthdayPhoto = "./images/Mr Remi.jpeg"; // TODO: add your photo (data URI or file path)
+const cakePhoto = "./images/cake.png"; // path to your cake image
 
 const slides = [
   {
@@ -41,7 +43,7 @@ const slides = [
   },
   {
     type: "photo",
-    src: "",
+    src: birthdayPhoto,
     label: "Thank you, Daddy",
     title: "Thank You, Daddy",
     msg: "Daddy, thank you for allowing God to bless me through you. A lot of what I have today started with the things you did for me when I was still finding my way. I pray God keeps you strong, keeps you in good health, and gives you many more years to see the lives you have helped shape flourish. Happy birthday, Daddy. 🤍",
@@ -63,7 +65,9 @@ slides.forEach((_, idx) => {
 function render() {
   const s = slides[i];
   if (s.type === "intro") {
-    visual.innerHTML = `<div class="icon-wrap">${heartIcon}</div>`;
+    visual.innerHTML = `<div class="photo-frame" style="aspect-ratio:1/1;max-width:180px;margin:0 auto 20px;">
+    <img src="${cakePhoto}" alt="Birthday cake">
+  </div>`;
   } else {
     visual.innerHTML = `<div class="photo-frame">${
       s.src
