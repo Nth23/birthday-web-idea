@@ -175,3 +175,12 @@ button.nav:hover {
   cursor: pointer;
   z-index: 10;
 }
+
+.nudge {
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-family: sans-serif;
+  letter-spacing: 0.02em;
+  margin: 0 0 14px;
+  opacity: 0.85;
+}
