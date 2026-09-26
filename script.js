@@ -7,6 +7,21 @@ const brandPhoto = "./images/brand.png";
 const birthdayPhoto = "./images/mr-remi.jpeg";
 const cakePhoto = "./images/cake.png";
 
+const allPhotos = [
+  uniPhoto,
+  gradPhoto,
+  nyscPhoto,
+  brandPhoto,
+  birthdayPhoto,
+  cakePhoto,
+];
+allPhotos.forEach((src) => {
+  if (src) {
+    const img = new Image();
+    img.src = src;
+  }
+});
+
 const slides = [
   {
     type: "intro",
@@ -69,9 +84,19 @@ function render() {
   } else {
     visual.innerHTML = `<div class="photo-frame">${
       s.src
-        ? `<img src="${s.src}" alt="${s.label}">`
+        ? `<img src="${s.src}" alt="${s.label}" class="fade-img">`
         : `<span class="placeholder-label">${s.label}</span>`
     }</div>`;
+  }
+  const activeImg = visual.querySelector("img.fade-img");
+  if (activeImg) {
+    if (activeImg.complete) {
+      activeImg.classList.add("loaded");
+    } else {
+      activeImg.addEventListener("load", () =>
+        activeImg.classList.add("loaded"),
+      );
+    }
   }
   titleEl.textContent = s.title;
   msgEl.textContent = s.msg;

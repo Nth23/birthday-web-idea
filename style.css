@@ -93,6 +93,13 @@ body {
   object-position: center top;
   display: block;
 }
+.photo-frame img.fade-img {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.photo-frame img.fade-img.loaded {
+  opacity: 1;
+}
 .photo-frame .placeholder-label {
   color: var(--muted);
   font-family: sans-serif;
