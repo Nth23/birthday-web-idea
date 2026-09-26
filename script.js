@@ -4,7 +4,7 @@ const uniPhoto = "./images/university.jpg";
 const gradPhoto = "./images/grad.png";
 const nyscPhoto = "./images/nysc.jpg";
 const brandPhoto = "./images/brand.png";
-const birthdayPhoto = "./images/mr-remi2.jpeg";
+const birthdayPhoto = "./images/mr-remi3.jpeg";
 const cakePhoto = "./images/cake.png";
 
 const allPhotos = [
